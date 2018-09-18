@@ -1,0 +1,71 @@
+/* Style basic fonts and letter color */
+html, body {
+    background-color: #f7f7f7;
+    color: #43453c;
+    font-family: 'Open Sans Condensed';
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+.full-height {
+    height: 100vh;
+}
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.position-ref {
+    position: relative;
+}
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+.content {
+    text-align: center;
+}
+.title {
+    font-size: 84px;
+}
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+/* Colors Biscommakers */
+.bg-blue-navbar {
+  background-color: #8ab8ca; /* #8ba8ac */
+}
+.bg-blue-gray {
+  background-color: #87aec4;
+}
+.bg-blue-white {
+  background-color: #72b7ca;
+}
+.bg-gray-coffe {
+  background-color: #43453c;
+}
+.bg-gray {
+  background-color: #bababa;
+}
+
+/* Footer */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f0f0f0;
+}
