@@ -1,88 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
+  <head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="DMRmejiar">
+    <meta name="description" content="">
+
+    <!-- Icon -->
+    <link rel="icon" href="{!! asset('svg/bis_icon.svg') !!}"/>
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Biscommakers') }}@yield('title')</title>
-    <link rel="icon" href="{!! asset('svg/bis_icon.svg') !!}"/>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans+Condensed" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
 
     <!-- Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-</head>
-<body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel bg-blue-navbar font-open-sans">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Biscommakers') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet" type="text/css">
+  	<link href="{{ asset('css/responsive.css') }}" rel="stylesheet" type="text/css">
+  	<link href="{{ asset('css/magnific-popup.css') }}" rel="stylesheet" type="text/css">
+  	<link href="{{ asset('css/animate.css') }}" rel="stylesheet" type="text/css">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+  </head>
 
-                    </ul>
+  <body>
 
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                            </li>
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
+    <!-- main-nav-start -->
+    <nav class="main-nav-outer" id="app-navbar">
+  		<div class="container">
+  			<ul class="main-nav">
+  				<li><a href="project">Proyecto</a></li>
+  				<li><a href="theory">Teoria</a></li>
+  				<li><a href="forms">Formularios</a></li>
+  				<li class="small-logo"><a href="{{ asset('/') }}"><img src="{{ asset('img/small-logo.png') }}" alt=""></a></li>
+  				<li><a href="design">Diseño</a></li>
+  				<li><a href="companyIdentity">Identidad</a></li>
+  				<li><a href="budget">Presupuesto</a></li>
+  			</ul>
+  		</div>
+  	</nav>
+  	<!--main-nav-end-->
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
+    <!-- Begin page content -->
+    <main role="main">
+      @yield('content')
+    </main>
+    <!-- End page content -->
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <!-- Begin page footer -->
+    <footer class="footer">
+  		<div class="container">
+  			<div class="footer-logo"><a href=""><img src="img/footer-logo.png" alt=""></a></div>
+  			<span class="copyright">&copy; Biscommakers. All Rights Reserved</span>
+  			<div class="credits">
+  				<!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Knight
+          -->
+  				Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+  			</div>
+  		</div>
+  	</footer>
+    <!-- End page footer -->
 
-        <main class="py-4">
-            @yield('content')
-        </main>
+    <!-- Scripts -->
+  	<script type="text/javascript">
+  		$(document).ready(function(e) {
 
-        <footer class="footer">
-          <div class="container">
-            <span class="text-muted">© 2018 Derechos Reservados - Biscommakers</span>
-          </div>
-        </footer>
+  			$('#app-navbar').scrollToFixed();
+  			$('.res-nav_click').click(function() {
+  				$('.main-nav').slideToggle();
+  				return false
 
-    </div>
-</body>
+  			});
+
+        $('.Portfolio-box').magnificPopup({
+          delegate: 'a',
+          type: 'image'
+        });
+
+  		});
+  	</script>
+  	<script>
+  		wow = new WOW({
+  			animateClass: 'animated',
+  			offset: 100
+  		});
+  		wow.init();
+  	</script>
+  	<script type="text/javascript">
+  		$(window).load(function() {
+
+  			$('.main-nav li a, .servicelink').bind('click', function(event) {
+  				var $anchor = $(this);
+
+  				$('html, body').stop().animate({
+  					scrollTop: $($anchor.attr('href')).offset().top - 102
+  				}, 1500, 'easeInOutExpo');
+  				/*
+  				if you don't want to use the easing effects:
+  				$('html, body').stop().animate({
+  					scrollTop: $($anchor.attr('href')).offset().top
+  				}, 1000);
+  				*/
+  				if ($(window).width() < 768) {
+  					$('.main-nav').hide();
+  				}
+  				event.preventDefault();
+  			});
+  		})
+  	</script>
+  	<script type="text/javascript">
+  		$(window).load(function() {
+
+
+  			var $container = $('.portfolioContainer'),
+  				$body = $('body'),
+  				colW = 375,
+  				columns = null;
+
+
+  			$container.isotope({
+  				// disable window resizing
+  				resizable: true,
+  				masonry: {
+  					columnWidth: colW
+  				}
+  			});
+
+  			$(window).smartresize(function() {
+  				// check if columns has changed
+  				var currentColumns = Math.floor(($body.width() - 30) / colW);
+  				if (currentColumns !== columns) {
+  					// set new column count
+  					columns = currentColumns;
+  					// apply width to container manually, then trigger relayout
+  					$container.width(columns * colW)
+  						.isotope('reLayout');
+  				}
+
+  			}).smartresize(); // trigger resize to set container width
+  			$('.portfolioFilter a').click(function() {
+  				$('.portfolioFilter .current').removeClass('current');
+  				$(this).addClass('current');
+
+  				var selector = $(this).attr('data-filter');
+  				$container.isotope({
+
+  					filter: selector,
+  				});
+  				return false;
+  			});
+
+  		});
+  	</script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  	<script type="text/javascript" src="{{ asset('js/wow.js') }}"></script>
+  	<script type="text/javascript" src="{{ asset('js/classie.js') }}"></script>
+  	<script type="text/javascript" src="{{ asset('js/magnific-popup.js') }}"></script>
+  	<script src="{{ asset('contactform/contactform.js') }}"></script>
+
+  </body>
 </html>
