@@ -31,7 +31,7 @@ Route::prefix('design')->group(function()
     Route::get('/infographic', 'DesignController@infographic');
 });
 
-Route::prefix('company_identity')->group(function()
+Route::prefix('companyIdentity')->group(function()
 {
     Route::get('/', 'CompanyIdentityController@index');
     Route::get('/mission', 'CompanyIdentityController@mission');
