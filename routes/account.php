@@ -36,8 +36,8 @@ Route::prefix('companyIdentity')->group(function()
     Route::get('/', 'CompanyIdentityController@index');
     Route::get('/mission', 'CompanyIdentityController@mission');
     Route::get('/vision', 'CompanyIdentityController@vision');
-    Route::get('/quality-policy', 'CompanyIdentityController@qualityPolicy');
-    Route::get('/organizational-structure', 'CompanyIdentityController@organizationalStructure');
+    Route::get('/qualityPolicy', 'CompanyIdentityController@qualityPolicy');
+    Route::get('/organizationalStructure', 'CompanyIdentityController@organizationalStructure');
 });
 
 Route::prefix('budget')->group(function()
