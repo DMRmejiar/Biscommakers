@@ -11,7 +11,7 @@
           <div class="team-leader-box col">
             <div class="team-leader wow fadeInDown delay-03s">
               <div class="team-leader-shadow"><a href="{{ asset('design/logo') }}"></a></div>
-              <img src="{{ asset('img/team-leader-pic1.jpg') }}" alt="">
+              <img src="{{ asset('img/icon-logo.png') }}" alt="">
             </div>
             <h3 class="wow fadeInDown delay-03s">Logo</h3>
             <span class="wow fadeInDown delay-03s">Chief Executive Officer</span>
@@ -20,7 +20,7 @@
           <div class="team-leader-box col">
             <div class="team-leader wow fadeInDown delay-03s">
               <div class="team-leader-shadow"><a href="{{ asset('design/color') }}"></a></div>
-              <img src="{{ asset('img/team-leader-pic2.jpg') }}" alt="">
+              <img src="{{ asset('img/icon-color.png') }}" alt="">
             </div>
             <h3 class="wow fadeInDown delay-03s">Color</h3>
             <span class="wow fadeInDown delay-03s">Chief Executive Officer</span>
@@ -31,16 +31,16 @@
           <div class="team-leader-box col">
             <div class="team-leader wow fadeInDown delay-03s">
               <div class="team-leader-shadow"><a href="{{ asset('design/typography') }}"></a></div>
-              <img src="{{ asset('img/team-leader-pic3.jpg') }}" alt="">
+              <img src="{{ asset('img/icon-tipografia.png') }}" alt="">
             </div>
-            <h3 class="wow fadeInDown delay-03s">Typografia</h3>
+            <h3 class="wow fadeInDown delay-03s">Tipografia</h3>
             <span class="wow fadeInDown delay-03s">Chief Executive Officer</span>
             <p class="wow fadeInDown delay-03s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
           </div>
           <div class="team-leader-box col">
             <div class="team-leader wow fadeInDown delay-03s">
               <div class="team-leader-shadow"><a href="{{ asset('design/infographic') }}"></a></div>
-              <img src="{{ asset('img/team-leader-pic1.jpg') }}" alt="">
+              <img src="{{ asset('img/icon-infografia.png') }}" alt="">
             </div>
             <h3 class="wow fadeInDown delay-03s">Infografia</h3>
             <span class="wow fadeInDown delay-03s">Chief Executive Officer</span>

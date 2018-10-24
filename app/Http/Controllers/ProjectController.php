@@ -38,7 +38,7 @@ class ProjectController extends Controller
     {
       $title = 'Salud';
 
-      return view('project.healt',compact('title'));
+      return view('project.health',compact('title'));
     }
 
     function agroindustry()

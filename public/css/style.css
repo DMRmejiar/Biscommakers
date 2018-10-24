@@ -63,12 +63,12 @@ body {
 	font-family: 'Aileron Thin';
 	font-size:14px;
 	font-weight:normal;
-	color:#48453c;
+	color:#000;
 	margin:0;
 }
 h2{
 	font-size:34px;
-	color:#48453c;
+	color:#000;
 	font-family: 'Open Sans', sans-serif;
 	font-weight:700;
 	letter-spacing: -1px;
@@ -115,7 +115,7 @@ p{
 	font-weight:400;
 	letter-spacing: -1px;
 	margin:0 0 22px 0 ;
-	color:#fff;
+	color:#000;
 }
 
 .we-create{
@@ -150,7 +150,7 @@ color: #fff;
 
 .link{
 	padding:15px 35px;
-	background:#8ab8ca;
+	background:#bcbcbc;
 	color:#000000 !important;
 	font-size:16px;
 	font-weight:400;
@@ -167,7 +167,7 @@ color: #fff;
 .link:hover {
 	text-decoration:none;
 	color:#48453c !important;
-	background:#87aec4;
+	background:#b0b0b0;
 }
 
 .link:active, .link:focus {
@@ -399,11 +399,11 @@ color: #fff;
 	font-size:12px;
 	line-height:20px;
 	color:#222222;
-	border-radius:4px;
+	border-radius:8px;
 	text-transform:uppercase;
 	font-family: 'Open Sans', sans-serif;
 	background:#f7f7f7;
-	margin-bottom:5px;
+	margin-bottom:10px;
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
 	-webkit-transition:all 0.3s ease-in-out;
@@ -422,7 +422,7 @@ color: #fff;
 .Portfolio-box{
 	text-align:center;
 	margin-bottom:30px;
-	height:350px;
+	height:500px;
 	width:350px;
 	overflow:hidden;
 	float:left;
@@ -842,7 +842,7 @@ border: 2px solid #fff;
 ---------------------------------*/
 
 .footer{
-	background:url(../img/pw_maze_black_2X.png) left top repeat;
+	background:url(../img/pw_maze_black.png) left top repeat;
 	padding:35px 0 35px;
 }
 .footer-logo{
@@ -850,13 +850,13 @@ border: 2px solid #fff;
 	width: 76px;
 }
 .copyright, .credits{
-	color:#cccccc;
+	color:#000;
 	font-size:14px;
 	display:block;
 	text-align:center;
 }
 .copyright a, .credits a{
-	color:#8ab8ca;
+	color:#000;
 	font-weight:600;
 	text-decoration: none;
 	transition:all 0.3s ease-in-out;

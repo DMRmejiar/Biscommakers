@@ -11,7 +11,7 @@
           <div class="team-leader-box col">
             <div class="team-leader wow fadeInDown delay-03s">
               <div class="team-leader-shadow"><a href="{{ asset('companyIdentity/mission') }}"></a></div>
-              <img src="{{ asset('img/team-leader-pic1.jpg') }}" alt="">
+              <img src="{{ asset('img/icon-mision.png') }}" alt="">
             </div>
             <h3 class="wow fadeInDown delay-03s">Misión</h3>
             <span class="wow fadeInDown delay-03s">Chief Executive Officer</span>
@@ -20,7 +20,7 @@
           <div class="team-leader-box col">
             <div class="team-leader wow fadeInDown delay-03s">
               <div class="team-leader-shadow"><a href="{{ asset('companyIdentity/vision') }}"></a></div>
-              <img src="{{ asset('img/team-leader-pic2.jpg') }}" alt="">
+              <img src="{{ asset('img/icon-vision.png') }}" alt="">
             </div>
             <h3 class="wow fadeInDown delay-03s">Vision</h3>
             <span class="wow fadeInDown delay-03s">Chief Executive Officer</span>
@@ -31,7 +31,7 @@
           <div class="team-leader-box col">
             <div class="team-leader wow fadeInDown delay-03s">
               <div class="team-leader-shadow"><a href="{{ asset('companyIdentity/qualityPolicy') }}"></a></div>
-              <img src="{{ asset('img/team-leader-pic3.jpg') }}" alt="">
+              <img src="{{ asset('img/icon-politicas-de-calidad.png') }}" alt="">
             </div>
             <h3 class="wow fadeInDown delay-03s">Polícas de Calidad</h3>
             <span class="wow fadeInDown delay-03s">Chief Executive Officer</span>
@@ -40,7 +40,7 @@
           <div class="team-leader-box col">
             <div class="team-leader wow fadeInDown delay-03s">
               <div class="team-leader-shadow"><a href="{{ asset('companyIdentity/organizationalStructure') }}"></a></div>
-              <img src="{{ asset('img/team-leader-pic1.jpg') }}" alt="">
+              <img src="{{ asset('img/icon-cuadro-organizacional.png') }}" alt="">
             </div>
             <h3 class="wow fadeInDown delay-03s">Cuadro Organizacional</h3>
             <span class="wow fadeInDown delay-03s">Chief Executive Officer</span>

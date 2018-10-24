@@ -12,8 +12,12 @@
         <ul class="we-create animated fadeInUp delay-1s">
           <li>Registrate y empieza a progresar</li>
         </ul>
+        <!--
         <a class="link animated fadeInUp delay-1s servicelink" href="{{ route('login') }}">{{ __('Login') }}</a>
-        <a class="link under-link animated fadeInUp delay-12s servicelink" href="{{ route('register') }}">{{ __('Register') }}</a>
+        <a class="link animated fadeInUp delay-12s servicelink" href="{{ route('register') }}">{{ __('Register') }}</a>
+        -->
+        <a class="link animated fadeInUp delay-1s servicelink" href="">{{ __('Login') }}</a>
+        <a class="link animated fadeInUp delay-12s servicelink" href="">{{ __('Register') }}</a>
       @else
         <ul class="we-create animated fadeInUp delay-1s">
           <li>{{ Auth::user()->name }}, ahora lo tienes todo para emprender</li>

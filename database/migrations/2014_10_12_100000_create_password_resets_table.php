@@ -1,4 +1,4 @@
-<?php
+<?phpsrc="http://127.0.0.1:8000/img/salud.png"
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;

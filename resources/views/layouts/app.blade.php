@@ -35,13 +35,13 @@
     <nav class="main-nav-outer" id="app-navbar">
   		<div class="container">
   			<ul class="main-nav">
-  				<li><a href="project">Proyecto</a></li>
-  				<li><a href="theory">Teoria</a></li>
-  				<li><a href="forms">Formularios</a></li>
+  				<li><a href="{{ asset('project') }}">Proyecto</a></li>
+  				<li><a href="{{ asset('theory') }}">Teoria</a></li>
+  				<li><a href="{{ asset('forms') }}">Formularios</a></li>
   				<li class="small-logo"><a href="{{ asset('/') }}"><img src="{{ asset('img/small-logo.png') }}" alt=""></a></li>
-  				<li><a href="design">Diseño</a></li>
-  				<li><a href="companyIdentity">Identidad</a></li>
-  				<li><a href="budget">Presupuesto</a></li>
+  				<li><a href="{{ asset('design') }}">Diseño</a></li>
+  				<li><a href="{{ asset('companyIdentity') }}">Identidad</a></li>
+  				<li><a href="{{ asset('budget') }}">Presupuesto</a></li>
   			</ul>
   		</div>
   	</nav>

@@ -1,28 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+<section class="main-section paddind" id="Project">
+  <!--main-section-start-->
   <div class="container">
-    <div class="card">
-      <div class="card-body">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Formularios</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Mark</td>
-            </tr>
-            <tr>
-              <td>Jacob</td>
-            </tr>
-            <tr>
-              <td>Larry</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <h2>Estamos trabajando en ello</h2>
   </div>
+  <div class="text-center">
+    <img src="{{ asset('img/progresspage.png') }}" alt="">
+  </div>
+</section>
 @endsection
